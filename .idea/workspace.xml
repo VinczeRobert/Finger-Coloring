@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c393caad-5da4-4eaf-9a8f-13aab217e5a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/background_subtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/background_subtraction/background_subtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/background_subtraction/background_subtraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conversion_to_binary/conversion_to_binary.py" beforeDir="false" afterPath="$PROJECT_DIR$/conversion_to_binary/conversion_to_binary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distance_transform/distance_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/distance_transform/distance_transform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame_obtaining/frame_obtaining.py" beforeDir="false" afterPath="$PROJECT_DIR$/frame_obtaining/frame_obtaining.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/palm_point/palm_point.py" beforeDir="false" afterPath="$PROJECT_DIR$/palm_point/palm_point.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +32,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\robi997\PycharmProjects\FingerColoring\try_something" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\robi997\PycharmProjects\FingerColoring" />
     </key>
@@ -43,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.background_subtraction">
+  <component name="RunManager" selected="Python.run">
     <configuration name="background_subtraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FingerColoring" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,8 +115,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FingerColoring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="try" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FingerColoring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/try_something" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/try_something/try.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.try" />
         <item itemvalue="Python.background_subtraction" />
         <item itemvalue="Python.perceptron_animation" />
         <item itemvalue="Python.gigi" />
@@ -146,13 +198,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/run.py</url>
-          <line>63</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/background_subtraction/background_subtraction.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="22" />
+          <line>37</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

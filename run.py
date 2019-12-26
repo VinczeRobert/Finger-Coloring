@@ -34,13 +34,10 @@ if __name__ == '__main__':
             binary_convertor = BinaryConvertor(background)
             binary_image = binary_convertor.convert_to_binary(params['blur_value'],
                                                               params['threshold'])
-            resized_image = cv2.resize(binary_image, dsize=(params['resize_dimension'],
-                                                            params['resize_dimension']), interpolation=cv2.INTER_CUBIC)
-            temp = 255 - resized_image
-            dt = distrance_transform_calculator.calculate_distance_transform(temp, cv2.DIST_L2, params['mask_size'])
+
+            dt = distrance_transform_calculator.calculate_distance_transform(binary_image)
             max_i, max_j = palm_point_calculator.obtaining_palm_point(dt)
-            image_for_palm_point = palm_point_calculator.convert_from_one_channel_to_three(resized_image)
-            palm_point_calculator.draw_image_with_palm_point(image_for_palm_point)
+            palm_point_calculator.draw_image_with_palm_point(background)
 
         k = cv2.waitKey(10)
         if k == 27:

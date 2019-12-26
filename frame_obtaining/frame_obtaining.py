@@ -15,6 +15,8 @@ class FrameObtainer:
 
         self._camera = cv2.VideoCapture(0)
         self._camera.set(10, 200)
+        self._camera.set(3, 1280)
+        self._camera.set(4, 1024)
 
     def create_trackbar(self):
         cv2.namedWindow(trackbar_name)

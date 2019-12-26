@@ -1,13 +1,12 @@
 import cv2
 import numpy as np
+from scipy.ndimage.morphology import distance_transform_cdt
 
 class DistanceTransformCalculator:
 
     @staticmethod
-    def calculate_distance_transform(source_image, type, mask_size):
-        h, w = source_image.shape[:2]
-        dst = np.zeros((h, 2), np.float32)
-        cv2.distanceTransform(source_image, type, mask_size, dst=dst)
-        dt = np.array(np.uint8(dst))
+    def calculate_distance_transform(source_image):
+        edt = distance_transform_cdt(source_image, metric='taxicab')
+        dt = np.uint8(edt)
         cv2.imshow('Distance Transform', dt)
         return dt
