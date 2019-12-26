@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c393caad-5da4-4eaf-9a8f-13aab217e5a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/background_subtraction/background_subtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/background_subtraction/background_subtraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conversion_to_binary/conversion_to_binary.py" beforeDir="false" afterPath="$PROJECT_DIR$/conversion_to_binary/conversion_to_binary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distance_transform/distance_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/distance_transform/distance_transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame_obtaining/frame_obtaining.py" beforeDir="false" afterPath="$PROJECT_DIR$/frame_obtaining/frame_obtaining.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palm_point/palm_point.py" beforeDir="false" afterPath="$PROJECT_DIR$/palm_point/palm_point.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/palm_point/palm_point.py" beforeDir="false" afterPath="$PROJECT_DIR$/palm_segmentor/palm_segmentor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
