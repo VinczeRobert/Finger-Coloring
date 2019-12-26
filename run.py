@@ -5,6 +5,7 @@ from constants import get_constants
 from conversion_to_binary.conversion_to_binary import BinaryConvertor
 from distance_transform.distance_transform import DistanceTransformCalculator
 from frame_obtaining.frame_obtaining import FrameObtainer
+from palm_mask_producer.palm_mask_producer import PalmMaskProducer
 from palm_segmentor.palm_segmentor import PalmSegmentor
 
 
@@ -24,6 +25,8 @@ if __name__ == '__main__':
     distrance_transform_calculator = DistanceTransformCalculator()
     palm_point_segmentor = PalmSegmentor()
 
+    palm_mask_producer = PalmMaskProducer()
+
     while frame_obtainer.get_camera().isOpened():
         original_image = frame_obtainer.read_frame()
 
@@ -39,6 +42,9 @@ if __name__ == '__main__':
             max_i, max_j = palm_point_segmentor.obtaining_palm_point(dt)
             image_with_palm_point = palm_point_segmentor.from_one_channel_to_three(background, binary_image)
             palm_point_segmentor.draw_image_with_palm_point(image_with_palm_point)
+            palm_point_segmentor.draw_image_with_inner_circle(image_with_palm_point)
+
+            palm_mask_producer.compute_samples(max_i, max_j, palm_point_segmentor.get_maximum_radius_12(), params['sampling_step'], image_with_palm_point)
 
         k = cv2.waitKey(10)
         if k == 27:

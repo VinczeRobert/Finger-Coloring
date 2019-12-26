@@ -7,7 +7,8 @@ def get_constants():
         'background_sub_threshold' : 50,
         'eta' : 0,
         'resize_dimension' : 200,
-        'mask_size' : 5
+        'mask_size' : 5,
+        'sampling_step' : 10
     }
 
     return constants

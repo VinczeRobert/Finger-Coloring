@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c393caad-5da4-4eaf-9a8f-13aab217e5a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palm_point/palm_point.py" beforeDir="false" afterPath="$PROJECT_DIR$/palm_segmentor/palm_segmentor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/palm_segmentor/palm_segmentor.py" beforeDir="false" afterPath="$PROJECT_DIR$/palm_segmentor/palm_segmentor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -174,6 +174,14 @@
       <option name="presentableId" value="Default" />
       <updated>1574608125109</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changed some names">
+      <created>1577351720851</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577351720851</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,15 +197,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/run.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed some names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed some names" />
   </component>
 </project>
