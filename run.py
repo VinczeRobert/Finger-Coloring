@@ -1,4 +1,5 @@
 import cv2
+import numpy as np
 
 from background_subtraction.background_subtraction import BackgroundSubtractor
 from constants import get_constants
@@ -25,8 +26,6 @@ if __name__ == '__main__':
     distrance_transform_calculator = DistanceTransformCalculator()
     palm_point_segmentor = PalmSegmentor()
 
-    palm_mask_producer = PalmMaskProducer()
-
     while frame_obtainer.get_camera().isOpened():
         original_image = frame_obtainer.read_frame()
 
@@ -35,16 +34,18 @@ if __name__ == '__main__':
             background = background_subtractor.extract_background(params['cap_region_y_end'],
                                                                   params['cap_region_x_begin'])
             binary_convertor = BinaryConvertor(background)
-            binary_image = binary_convertor.convert_to_binary(params['blur_value'],
-                                                              params['threshold'])
-
+            binary_image = binary_convertor.convert_to_binary(params['blur_value'], params['threshold'])
+            binary_image = cv2.resize(binary_image, (200, 200), interpolation=cv2.INTER_AREA)
             dt = distrance_transform_calculator.calculate_distance_transform(binary_image)
             max_i, max_j = palm_point_segmentor.obtaining_palm_point(dt)
+            background = cv2.resize(background, (200, 200), interpolation=cv2.INTER_AREA)
             image_with_palm_point = palm_point_segmentor.from_one_channel_to_three(background, binary_image)
             palm_point_segmentor.draw_image_with_palm_point(image_with_palm_point)
             palm_point_segmentor.draw_image_with_inner_circle(image_with_palm_point)
 
-            palm_mask_producer.compute_samples(max_i, max_j, palm_point_segmentor.get_maximum_radius_12(), params['sampling_step'], image_with_palm_point)
+            # palm_mask_producer = PalmMaskProducer(binary_image, image_with_palm_point)
+            # palm_mask_producer.compute_samples(max_i, max_j, palm_point_segmentor.get_maximum_radius_12(), params['sampling_step'])
+            # mask_points = palm_mask_producer.get_palm_mask()
 
         k = cv2.waitKey(10)
         if k == 27:

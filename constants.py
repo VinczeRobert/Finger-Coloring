@@ -8,7 +8,7 @@ def get_constants():
         'eta' : 0,
         'resize_dimension' : 200,
         'mask_size' : 5,
-        'sampling_step' : 10
+        'sampling_step' : 5
     }
 
     return constants

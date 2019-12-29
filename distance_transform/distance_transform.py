@@ -8,5 +8,5 @@ class DistanceTransformCalculator:
     def calculate_distance_transform(source_image):
         edt = distance_transform_cdt(source_image, metric='taxicab')
         dt = np.uint8(edt)
-        cv2.imshow('Distance Transform', dt)
+        # cv2.imshow('Distance Transform', dt)
         return dt

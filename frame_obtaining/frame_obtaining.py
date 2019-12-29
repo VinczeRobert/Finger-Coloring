@@ -16,7 +16,6 @@ class FrameObtainer:
         self._camera = cv2.VideoCapture(0)
         self._camera.set(10, 200)
         self._camera.set(3, 1280)
-        self._camera.set(4, 1024)
 
     def create_trackbar(self):
         cv2.namedWindow(trackbar_name)
@@ -32,8 +31,7 @@ class FrameObtainer:
         frame = cv2.bilateralFilter(frame, 5, 50, 100)
         frame = cv2.flip(frame, 1)
         # flip the frame horizontally
-        cv2.rectangle(frame, (int(self._cap_region_x_begin * frame.shape[1]), 0),
-                          (frame.shape[1], int(self._cap_region_y_end * frame.shape[0])), (0, 255, 0), 2)
+        cv2.rectangle(frame, (920, 0), (1280, 360), (0, 255, 0), 2)
         cv2.imshow('Original Image', frame)
         return frame
 

@@ -24,12 +24,12 @@ class PalmSegmentor():
 
     def draw_image_with_palm_point(self, image):
         cv2.circle(image, (self._max_j, self._max_i), 5, (0, 255, 0), -1)
-        cv2.imshow('Picture with Palm Point', image)
+        # cv2.imshow('Picture with Palm Point', image)
 
     def draw_image_with_inner_circle(self, image):
         cv2.circle(image, (self._max_j, self._max_i), self._maximum_radius, (255, 0, 0), 2)
-        cv2.circle(image, (self._max_j, self._max_i), int(1.2 * self._maximum_radius), (0, 0, 255), 2)
-        cv2.imshow('Picture with Inner Radius', image)
+        cv2.circle(image, (self._max_j, self._max_i), int(1.2*self._maximum_radius), (0, 0, 255), 2)
+        cv2.imshow("Gigi", image)
 
     def get_maximum_radius_12(self):
         return int(1.2 * self._maximum_radius)
