@@ -9,13 +9,15 @@ class BackgroundSubtractor:
         self._eta = eta
         self._background_captured = False
 
-    def extract_background(self, cap_region_y_end, cap_region_x_begin):
+    def extract_background(self, cap_region_y_end, cap_region_x_begin, erode_iterations):
         mask = self._background_model.apply(self._frame, learningRate=self._eta)
         kernel = np.ones((3, 3), np.uint8)
-        mask = cv2.erode(mask, kernel, iterations=1)
+        mask = cv2.erode(mask, kernel, iterations=erode_iterations)
+        mask = cv2.dilate(mask, kernel, iterations=erode_iterations)
         # get the background by checking the difference
         img = cv2.bitwise_and(self._frame, self._frame, mask=mask)
         img = img[0:360, 920:1280]
+
         # cv2.imshow('Extracted Hand', img)
         return img
 
