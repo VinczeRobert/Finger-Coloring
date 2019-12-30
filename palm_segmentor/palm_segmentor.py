@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+
 class PalmSegmentor():
 
     def __init__(self):

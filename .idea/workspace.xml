@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c393caad-5da4-4eaf-9a8f-13aab217e5a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/background_subtraction/background_subtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/background_subtraction/background_subtraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conversion_to_binary/conversion_to_binary.py" beforeDir="false" afterPath="$PROJECT_DIR$/conversion_to_binary/conversion_to_binary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distance_transform/distance_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/distance_transform/distance_transform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/labeling/labeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/labeling/labeling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/palm_mask_producer/palm_mask_producer.py" beforeDir="false" afterPath="$PROJECT_DIR$/palm_mask_producer/palm_mask_producer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palm_segmentor/palm_segmentor.py" beforeDir="false" afterPath="$PROJECT_DIR$/palm_segmentor/palm_segmentor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -208,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577697742618</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added the possibility to set number of times that the picture is eroded before background subtraction.">
+      <created>1577698006715</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577698006715</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Gave up on the idea to use the palm mask algorithm for now (because I strongly believe that there is something that I don't to right) and just draw a rectangle around the circle (I am aware that this won't work in all cases, but at least I have something that I can present...)">
+      <created>1577698191093</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577698191093</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,14 +243,16 @@
     <MESSAGE value="Added a way to obtain the sampled points that are required for the algorithm to obtain the palm mask." />
     <MESSAGE value="Brought back the project to a version that puts &quot;Algorithm 1&quot; into comments as I strongly believe that the way it is described on that website is incorrect." />
     <MESSAGE value="Added the labeling algorithm as the final step of finger coloring." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the labeling algorithm as the final step of finger coloring." />
+    <MESSAGE value="Added the possibility to set number of times that the picture is eroded before background subtraction." />
+    <MESSAGE value="Gave up on the idea to use the palm mask algorithm for now (because I strongly believe that there is something that I don't to right) and just draw a rectangle around the circle (I am aware that this won't work in all cases, but at least I have something that I can present...)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gave up on the idea to use the palm mask algorithm for now (because I strongly believe that there is something that I don't to right) and just draw a rectangle around the circle (I am aware that this won't work in all cases, but at least I have something that I can present...)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/labeling/labeling.py</url>
-          <line>8</line>
+          <line>6</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
