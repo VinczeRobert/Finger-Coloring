@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c393caad-5da4-4eaf-9a8f-13aab217e5a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FingerColoring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FingerColoring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/background_subtraction/background_subtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/background_subtraction/background_subtraction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distance_transform/distance_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/distance_transform/distance_transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame_obtaining/frame_obtaining.py" beforeDir="false" afterPath="$PROJECT_DIR$/frame_obtaining/frame_obtaining.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/palm_mask_producer/palm_mask_producer.py" beforeDir="false" afterPath="$PROJECT_DIR$/palm_mask_producer/palm_mask_producer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/palm_segmentor/palm_segmentor.py" beforeDir="false" afterPath="$PROJECT_DIR$/palm_segmentor/palm_segmentor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
@@ -18,6 +14,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="FingerColoring" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -195,7 +194,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577354232519</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Brought back the project to a version that puts &quot;Algorithm 1&quot; into comments as I strongly believe that the way it is described on that website is incorrect.">
+      <created>1577612311814</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577612311814</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added the labeling algorithm as the final step of finger coloring.">
+      <created>1577697742618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577697742618</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,13 +227,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed some names" />
     <MESSAGE value="Added a way to obtain the sampled points that are required for the algorithm to obtain the palm mask." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a way to obtain the sampled points that are required for the algorithm to obtain the palm mask." />
+    <MESSAGE value="Brought back the project to a version that puts &quot;Algorithm 1&quot; into comments as I strongly believe that the way it is described on that website is incorrect." />
+    <MESSAGE value="Added the labeling algorithm as the final step of finger coloring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the labeling algorithm as the final step of finger coloring." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/palm_segmentor/palm_segmentor.py</url>
+          <url>file://$PROJECT_DIR$/labeling/labeling.py</url>
+          <line>8</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

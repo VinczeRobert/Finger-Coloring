@@ -6,6 +6,7 @@ from constants import get_constants
 from conversion_to_binary.conversion_to_binary import BinaryConvertor
 from distance_transform.distance_transform import DistanceTransformCalculator
 from frame_obtaining.frame_obtaining import FrameObtainer
+from labeling.labeling import LabelingAlgorithm
 from palm_mask_producer.palm_mask_producer import PalmMaskProducer
 from palm_segmentor.palm_segmentor import PalmSegmentor
 
@@ -26,13 +27,16 @@ if __name__ == '__main__':
     distrance_transform_calculator = DistanceTransformCalculator()
     palm_point_segmentor = PalmSegmentor()
 
+    labeling_algorithm = LabelingAlgorithm()
+
     while frame_obtainer.get_camera().isOpened():
         original_image = frame_obtainer.read_frame()
 
         if background_subtractor.is_background_captured():
             background_subtractor.set_frame(original_image)
             background = background_subtractor.extract_background(params['cap_region_y_end'],
-                                                                  params['cap_region_x_begin'])
+                                                                  params['cap_region_x_begin'],
+                                                                  params['erode_iterations'])
             binary_convertor = BinaryConvertor(background)
             binary_image = binary_convertor.convert_to_binary(params['blur_value'], params['threshold'])
             binary_image = cv2.resize(binary_image, (200, 200), interpolation=cv2.INTER_AREA)
@@ -41,11 +45,18 @@ if __name__ == '__main__':
             background = cv2.resize(background, (200, 200), interpolation=cv2.INTER_AREA)
             image_with_palm_point = palm_point_segmentor.from_one_channel_to_three(background, binary_image)
             palm_point_segmentor.draw_image_with_palm_point(image_with_palm_point)
-            palm_point_segmentor.draw_image_with_inner_circle(image_with_palm_point)
+            palm_point_segmentor.draw_image_with_inner_circle(binary_image)
 
             # palm_mask_producer = PalmMaskProducer(binary_image, image_with_palm_point)
             # palm_mask_producer.compute_samples(max_i, max_j, palm_point_segmentor.get_maximum_radius_12(), params['sampling_step'])
             # mask_points = palm_mask_producer.get_palm_mask()
+            #
+            # palm_mask = np.zeros((200, 200), np.uint8)
+            # for point in mask_points:
+            #     palm_mask[point[0]][point[1]] = 255
+            # cv2.imshow('Palm Mask', palm_mask)
+
+            labeling_algorithm.create_components(binary_image)
 
         k = cv2.waitKey(10)
         if k == 27:
