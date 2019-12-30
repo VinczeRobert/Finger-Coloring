@@ -18,3 +18,4 @@ def create_components(image):
     labeled_img[label_hue==0] = 0
 
     cv2.imshow('Labeled', labeled_img)
+    return labeled_img

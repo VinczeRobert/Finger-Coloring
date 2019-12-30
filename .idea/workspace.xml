@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c393caad-5da4-4eaf-9a8f-13aab217e5a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conversion_to_binary/conversion_to_binary.py" beforeDir="false" afterPath="$PROJECT_DIR$/conversion_to_binary/conversion_to_binary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distance_transform/distance_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/distance_transform/distance_transform.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/labeling/labeling.py" beforeDir="false" afterPath="$PROJECT_DIR$/labeling/labeling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/palm_mask_producer/palm_mask_producer.py" beforeDir="false" afterPath="$PROJECT_DIR$/palm_mask_producer/palm_mask_producer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -222,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577698191093</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Removed classes where they are useless.">
+      <created>1577701317607</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1577701317607</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,15 +249,16 @@
     <MESSAGE value="Added the labeling algorithm as the final step of finger coloring." />
     <MESSAGE value="Added the possibility to set number of times that the picture is eroded before background subtraction." />
     <MESSAGE value="Gave up on the idea to use the palm mask algorithm for now (because I strongly believe that there is something that I don't to right) and just draw a rectangle around the circle (I am aware that this won't work in all cases, but at least I have something that I can present...)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gave up on the idea to use the palm mask algorithm for now (because I strongly believe that there is something that I don't to right) and just draw a rectangle around the circle (I am aware that this won't work in all cases, but at least I have something that I can present...)" />
+    <MESSAGE value="Removed classes where they are useless." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed classes where they are useless." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/labeling/labeling.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/run.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

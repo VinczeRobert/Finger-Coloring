@@ -52,7 +52,16 @@ if __name__ == '__main__':
             #     palm_mask[point[0]][point[1]] = 255
             # cv2.imshow('Palm Mask', palm_mask)
 
-            create_components(binary_image)
+            labeled_image = create_components(binary_image)
+
+            for i in range(0, labeled_image.shape[0]):
+                for j in range(0, labeled_image.shape[1]):
+                    if labeled_image[i][j].any() != 0:
+                        image_with_palm_point[i][j] = labeled_image[i][j]
+
+            image_with_palm_point = cv2.resize(image_with_palm_point, (400, 400), interpolation=cv2.INTER_AREA)
+            cv2.imshow('Final', image_with_palm_point)
+
 
         k = cv2.waitKey(10)
         if k == 27:
